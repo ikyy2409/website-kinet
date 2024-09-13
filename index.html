@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KI.net</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background video -->
+    <video autoplay muted loop id="bgVideo">
+        <source src="background vidio.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo KI.net">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#tentang-kami">Tentang Kami</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home"></section>
+    <section class="hero">
+        <h1>Selamat Datang di KI.net</h1>
+        <p>Solusi internet terbaik untuk kebutuhan Anda.</p>
+        <h5> powered by jinom </h5>
+    </section>
+
+    <section id="produk"></section>
+    <section class="products">
+        <h2>Produk Kami</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="logo.png" alt="Produk 1">
+                <h3>Paket Basic
+                    7Mbps
+                </h3>
+                <p>Rp.150.000/bln</p>
+            </div>
+            <div class="product">
+                <img src="logo.png" alt="Produk 2">
+                <h3>Paket Medium 15Mbps</h3>
+                <p>Rp.230.000/bln</p>
+            </div>
+            <div class="product">
+                <img src="logo.png" alt="Produk 3">
+                <h3>Paket High 30Mbps</h3>
+                <p>340.000/bln</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Tentang Kami dengan Slider -->
+    <section id="tentang-kami" class="about-us">
+        <h2>Tentang Kami</h2>
+        <div class="slider">
+            <div class="slide active">
+                <p>KI.net adalah penyedia layanan internet terbaik di Indonesia yang di support oleh PT JINOM NETWORK INDONESIA, dengan fokus pada koneksi yang cepat dan stabil.</p>
+            </div>
+            <div class="slide">
+                <p>Kami telah melayani lebih dari 1 juta pelanggan di seluruh Indonesia dan terus berkembang.</p>
+            </div>
+            <div class="slide">
+                <p>Tim kami terdiri dari para ahli jaringan yang siap memberikan layanan terbaik 24/7.</p>
+            </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </section>
+
+    <footer>
+        <section id="kontak">
+        <div class="social-media">
+            <a href="https://www.tiktok.com/@ki.net?is_from_webapp=1&sender_device=pc" target="_blank">Tiktok</a>
+            <a href="https://wa.me/message/ADLGUWXKJP6OP1" target="_blank">WhatsApp</a>
+            <a href="https://www.instagram.com/ki_net.hifi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+        </div>
+        </section>
+        <p>&copy; 2024 KI.net. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
